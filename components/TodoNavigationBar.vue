@@ -22,40 +22,19 @@
           ></v-list>
         </v-navigation-drawer>
   
-        <v-main style="height: 500px;">
+        <v-main style="height: 100vh;">
           <v-card-text>
-            The navigation drawer will appear from the bottom on smaller size screens.
+            <TodoTaskDiv/>
+            <TodoTaskCreateButton/>
           </v-card-text>
         </v-main>
+
       </v-layout>
     </v-card>
   </template>
   
   <script>
   export default {
-    data: () => ({
-      drawer: false,
-      group: null,
-      items: [
-        {
-          title: 'Foo',
-          value: 'foo',
-        },
-        {
-          title: 'Bar',
-          value: 'bar',
-        },
-        {
-          title: 'Fizz',
-          value: 'fizz',
-        },
-        {
-          title: 'Buzz',
-          value: 'buzz',
-        },
-      ],
-    }),
-  
     watch: {
       group () {
         this.drawer = false

@@ -99,10 +99,14 @@
   </script>
   
   <style scoped>
-  .centering-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  </style>
+.centering-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.v-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+</style>
