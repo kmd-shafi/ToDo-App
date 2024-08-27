@@ -1,55 +1,92 @@
 <template>
-<nav class="navbar">
-    <div class="navbar">
-        <div class="navdiv">
-            <div class="logo">ToDo</div>
-            <ul>
-                <li class="li">Welcome</li>
-                <li class="li">name</li>
-                <button class="logout_btn">Logout</button>
-            </ul>
-        </div>
-    </div>
-</nav>
-</template>
-
-<script>
-
-</script>
-
-<style>
-*{
-    text-decoration: none;
-}
-.navbar{
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    font-size: 35px;
-    font-weight: 600;
-    color: white;
-}
-.li{
-    list-style: none;
-    display: inline-block;
-    color: white;
-    font-size: 18px;
+    <v-card>
+      <v-layout>
+        <v-app-bar
+          color="primary"
+          prominent
+        >
+          <v-toolbar-title>ToDo App</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <div class="welcome-text">Welcome</div>
+          <div class="name-text">John Doe</div>
+          <v-btn @click="logout" variant="contained" color="primary" class="bg-white">Logout</v-btn>
+        </v-app-bar>
+  
+        <v-navigation-drawer
+          v-model="drawer"
+          :location="$vuetify.display.mobile ? 'bottom' : undefined"
+          temporary
+        >
+          <v-list
+            :items="items"
+          ></v-list>
+        </v-navigation-drawer>
+  
+        <v-main style="height: 500px;">
+          <v-card-text>
+            The navigation drawer will appear from the bottom on smaller size screens.
+          </v-card-text>
+        </v-main>
+      </v-layout>
+    </v-card>
+  </template>
+  
+  <script>
+  export default {
+    data: () => ({
+      drawer: false,
+      group: null,
+      items: [
+        {
+          title: 'Foo',
+          value: 'foo',
+        },
+        {
+          title: 'Bar',
+          value: 'bar',
+        },
+        {
+          title: 'Fizz',
+          value: 'fizz',
+        },
+        {
+          title: 'Buzz',
+          value: 'buzz',
+        },
+      ],
+    }),
+  
+    watch: {
+      group () {
+        this.drawer = false
+      },
+    },
+  
+    methods: {
+      logout () {
+        // Add your logout logic here
+        console.log('Logout button clicked')
+      },
+    },
+  }
+  </script>
+  <style>
+  .welcome-text {
+    margin-right: 10px;
+    font-size: 16px;
     font-weight: bold;
-    margin-right: 25px;
-}
-.logout_btn{
-    background-color: whitesmoke;
+    color: #fff;
+  }
+  
+  .name-text {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logout-button {
     margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 90px;
-}
-</style>
+  }
+  </style>
+  
