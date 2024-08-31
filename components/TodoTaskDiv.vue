@@ -2,7 +2,7 @@
     <v-card
       class="mx-auto"
       subtitle="Date"
-      width="800"
+      width="auto"
       style="margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);"
     >
       <template v-slot:title>
