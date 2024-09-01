@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "better-sqlite3": "^9.6.0",
+    "body-parser": "^1.20.2",
     "drizzle-orm": "^0.29.5",
     "express": "^4.19.2",
     "nuxt": "^3.13.0",
