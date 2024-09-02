@@ -64,3 +64,8 @@
 - Add task categorization or tagging feature
 - Implement task sorting (by date, priority, etc.)
 - Add task search functionality
+
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
