@@ -1,6 +1,6 @@
 # To-Do App Project Checklist
 
-## 1. Initial Setup - [x] 
+- [x] 1. Initial Setup 
 - Initialize a new Nuxt.js project
 - Set up Git repository
 - Create `.gitignore` file
@@ -11,7 +11,7 @@
   - SQLite
   - Drizzle ORM
 
-## 2. Frontend Development (Nuxt.js & Vuetify) - [x] 
+- [x] 2. Frontend Development (Nuxt.js & Vuetify) 
 - Set up Vuetify in Nuxt.js project
 - Create layout components
 - Implement navigation
@@ -24,34 +24,34 @@
 - Add loading indicators for asynchronous operations
 - Implement error handling
 
-## 3. State Management (Pinia) - [] 
+- [] . State Management (Pinia) - [] 
 - Set up Pinia in the Nuxt.js project
 - Create stores for tasks and user authentication
 - Implement actions and state for tasks (placeholders for now)
 - Implement actions and state for user authentication (placeholders for now)
 
-## 4. Backend Setup (Express & SQLite with Drizzle ORM) - [] 
+- [] 4. Backend Setup (Express & SQLite with Drizzle ORM) - [] 
 - Set up Express server
 - Configure SQLite database connection
 - Set up Drizzle ORM with SQLite
 - Implement authentication middleware for Express
 
-## 5. API Development - [] 
+- [] 5. API Development - [] 
 - Create API routes for CRUD operations on tasks
 - Implement user registration and login routes
 - Write API documentation
 
-## 6. Middleware - [] 
+- [] 6. Middleware - [] 
 - Set up middleware directory in Nuxt.js project
 - Create authentication middleware to protect routes
 - Implement middleware for handling user roles/permissions
 
-## 7. Database Design - [] 
+- [] 7. Database Design - [] 
 - Design database schema for tasks and users
 - Use Drizzle ORM to define models for users and tasks
 - Set up relationships between users and tasks
 
-## 8. Feature Implementation - [] 
+- [] 8. Feature Implementation - [] 
 - Implement task creation functionality
 - Implement task editing functionality
 - Implement task deletion functionality
